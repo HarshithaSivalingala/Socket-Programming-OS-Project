@@ -1,7 +1,7 @@
 # Socket Programming with Multithreading
 
 ## Overview
-This project demonstrates a socket programming implementation where a server can communicate with multiple clients simultaneously using the concept of multithreading. The client program manages multiple connections to different servers, enabling concurrent communication.
+This project demonstrates a socket programming implementation where a server can communicate with multiple clients simultaneously using the concept of multithreading. The server program manages multiple connections to different clients, enabling concurrent communication.
 
 A notable feature is the controlled client termination process: clients exit gracefully only when the user inputs the command `exit`. This ensures a clean disconnection and resource release.
 
@@ -30,7 +30,7 @@ Ensure you have the following setup on your machine:
 ### Client Setup
 1. Compile the client code:
    ```bash
-   gcc -o client client.c -pthread
+   gcc -o client client.c
    ```
 2. Run the client:
    ```bash
